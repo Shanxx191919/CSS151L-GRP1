@@ -1,0 +1,152 @@
+.feature-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: #0d6efd;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.feature {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.features-container {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.featurette-divider {
+    width: 50%; 
+    margin: 20px auto; 
+    border: 1px solid #dee2e6; 
+}
+
+h2.featurette-heading {
+    font-size: 2.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.featurette-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.testimonial-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px; 
+    padding: 20px; 
+    background-color: white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
+.star-rating {
+    display: flex; 
+    align-items: center; 
+    margin-top: 10px; 
+}
+
+.star {
+    color: gold;
+    margin-right: 5px; 
+}
+
+.circle-placeholder {
+    width: 140px; 
+    height: 140px; 
+    border-radius: 50%;
+    background-color: #f0f0f0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    overflow: hidden; 
+}
+
+.circle-placeholder img {
+    width: 100%;
+    height: auto; 
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: auto;
+}
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 300%; /* Total width for three slides */
+}
+.carousel-item {
+    min-width: 100%; /* Each item takes the full width */
+    box-sizing: border-box;
+}
+.carousel img {
+    width: 100%; /* Ensure images fit the container */
+    display: block; /* Ensure no gaps below the image */
+}
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+    border-radius: 50%; /* Round shape for arrows */
+}
+.carousel-control-prev {
+    left: 10px;
+}
+.carousel-control-next {
+    right: 10px;
+}
+/* Custom arrow styles */
+.carousel-control-prev:before,
+.carousel-control-next:before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+.carousel-control-prev:before {
+    border-bottom: 5px solid black; /* Adjust color as needed */
+    margin-top: -3px; /* Center the arrow */
+}
+.carousel-control-next:before {
+    border-top: 5px solid black; /* Adjust color as needed */
+    margin-top: -3px; /* Center the arrow */
+}
