@@ -98,33 +98,33 @@ h2.featurette-heading {
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 600px; /* Adjust as needed */
+    max-width: 600px; 
     margin: auto;
 }
 .carousel-inner {
     display: flex;
     transition: transform 0.5s ease;
-    width: 300%; /* Total width for three slides */
+    width: 300%;
 }
 .carousel-item {
-    min-width: 100%; /* Each item takes the full width */
+    min-width: 100%; 
     box-sizing: border-box;
 }
 .carousel img {
-    width: 100%; /* Ensure images fit the container */
-    display: block; /* Ensure no gaps below the image */
+    width: 100%; 
+    display: block; 
 }
 .carousel-control-prev,
 .carousel-control-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.5); 
     border: none;
     cursor: pointer;
     padding: 10px;
     z-index: 1000;
-    border-radius: 50%; /* Round shape for arrows */
+    border-radius: 50%; 
 }
 .carousel-control-prev {
     left: 10px;
@@ -132,7 +132,7 @@ h2.featurette-heading {
 .carousel-control-next {
     right: 10px;
 }
-/* Custom arrow styles */
+
 .carousel-control-prev:before,
 .carousel-control-next:before {
     content: '';
@@ -143,10 +143,14 @@ h2.featurette-heading {
     border-right: 5px solid transparent;
 }
 .carousel-control-prev:before {
-    border-bottom: 5px solid black; /* Adjust color as needed */
-    margin-top: -3px; /* Center the arrow */
+    border-bottom: 5px solid black; 
+    margin-top: -3px; 
 }
 .carousel-control-next:before {
-    border-top: 5px solid black; /* Adjust color as needed */
-    margin-top: -3px; /* Center the arrow */
+    border-top: 5px solid black; 
+    margin-top: -3px; 
 }
+
+
+
+

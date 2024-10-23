@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - RoomSwipe</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Make the body fill the viewport height */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            flex: 1; /* Allow the container to grow and take up available space */
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #343a40;
+            cursor: pointer;
+            margin: 10px 0;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        h3:hover {
+            background-color: #d3d3d3;
+        }
+
+        .answer {
+            display: none; /* Hidden by default */
+            padding: 10px;
+            background: #f1f1f1;
+            border-left: 5px solid #007bff;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+
+    <div class="container">
+        <h2>General Questions</h2>
+        <h3 onclick="toggleAnswer('answer1')">What is RoomSwipe?</h3>
+        <div id="answer1" class="answer">
+            <p>RoomSwipe is a mobile application designed to help students find affordable and suitable housing near their academic institutions, using a swipe-based interface to simplify the process.</p>
+        </div>
+
+        <h3 onclick="toggleAnswer('answer2')">How does the swipe feature work?</h3>
+        <div id="answer2" class="answer">
+            <p>Students can swipe right to express interest in a rental property or a potential roommate and swipe left to dismiss options that do not meet their needs.</p>
+        </div>
+
+        <h3 onclick="toggleAnswer('answer3')">Is parental consent required?</h3>
+        <div id="answer3" class="answer">
+            <p>Yes, for students under 18, parental consent is required before finalizing any rental agreements, ensuring safety and security for minors.</p>
+        </div>
+
+        <h3 onclick="toggleAnswer('answer4')">What kind of listings can I find on RoomSwipe?</h3>
+        <div id="answer4" class="answer">
+            <p>RoomSwipe features comprehensive rental listings including details such as rent, utilities, house rules, and proximity to universities, catering specifically to student needs.</p>
+        </div>
+
+        <h3 onclick="toggleAnswer('answer5')">Can I communicate with potential roommates or landlords?</h3>
+        <div id="answer5" class="answer">
+            <p>Yes, the app includes a secure messaging feature that allows tenants, landlords, and potential housemates to communicate directly within the platform.</p>
+        </div>
+
+        <h2>Technical Questions</h2>
+        <h3 onclick="toggleAnswer('answer6')">What platforms is RoomSwipe available on?</h3>
+        <div id="answer6" class="answer">
+            <p>RoomSwipe will be available on both iOS and Android platforms, ensuring accessibility for a wide range of users.</p>
+        </div>
+
+        <h3 onclick="toggleAnswer('answer7')">How do I create an account?</h3>
+        <div id="answer7" class="answer">
+            <p>You can create an account by downloading the app and signing up with your email or student ID. Follow the prompts to complete your profile.</p>
+        </div>
+
+        <h3 onclick="toggleAnswer('answer8')">Is there a cost to use RoomSwipe?</h3>
+        <div id="answer8" class="answer">
+            <p>The app is free to use for students, with potential premium features to enhance the user experience available in the future.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 RoomSwipe. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleAnswer(answerId) {
+            const answer = document.getElementById(answerId);
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
